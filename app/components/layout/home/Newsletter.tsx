@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Newsletter() {
     return (
         <section className="bg-[#e3d2bb]">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-stretch">
+            <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-stretch mt-10">
                 {/* Left: image */}
                 <div className="relative h-72 md:h-auto min-h-[280px]">
                     <Image
