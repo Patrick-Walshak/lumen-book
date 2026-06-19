@@ -1,15 +1,3 @@
-// export default function Navbar() {
-//     return (
-//         <nav>
-//             <div>
-//                 <div>
-//                     <span>BookWor</span>
-//                 </div>
-//             </div>
-//         </nav>
-//     )
-// }
-
 import Link from "next/link";
 
 export default function Navbar() {
