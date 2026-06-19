@@ -11,13 +11,13 @@ const stats = [
 
 export default function Hero() {
     return (
-        <section className="relative w-full overflow-hidden">
+        <section className="relative w-full min-h-screen overflow-hidden">
             {/* Background image */}
             <Image
-                src="/images/hero-bg.jpg"
+                src="/image/Modern Library Ideas.jpeg"
                 alt=""
                 fill
-                priority
+                // priority
                 className="object-cover"
             />
 
@@ -25,10 +25,10 @@ export default function Hero() {
             <div className="absolute inset-0 bg-black/45" />
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-10">
-                <div className="grid md:grid-cols-2 gap-10 items-center">
+                <div className="grid md:grid-cols-2 gap-44 items-center mt-56">
                     {/* Left: copy */}
                     <div className="max-w-xl">
-                        <h1 className="font-serif text-5xl md:text-6xl font-bold leading-tight text-white">
+                        <h1  className= "{`${chewy.className} font-serif text-5xl md:text-[80px] font-bold leading-tight text-white">
                             Discover Your Next Favorite Book
                         </h1>
 
@@ -47,15 +47,9 @@ export default function Hero() {
                     </div>
 
                     {/* Right: floating book covers */}
-                    <div className="relative h-[380px] flex items-center justify-center">
-                        <div className="absolute right-10 w-40 h-56 rotate-3 shadow-2xl rounded-sm overflow-hidden">
-                            <Image src="/images/book-2.jpg" alt="Book cover" fill className="object-cover" />
-                        </div>
-                        <div className="absolute right-0 w-40 h-56 -rotate-2 shadow-2xl rounded-sm overflow-hidden">
-                            <Image src="/images/book-3.jpg" alt="Book cover" fill className="object-cover" />
-                        </div>
-                        <div className="relative w-48 h-72 shadow-2xl rounded-sm overflow-hidden z-10">
-                            <Image src="/images/book-1.jpg" alt="Featured book cover" fill className="object-cover" />
+                    <div className="relative h-[380px] flex items-center gap-52 justify-center">
+                        <div className="relative w-[600px] h-[850px] rounded-sm  z-10">
+                            <Image src="/image/61e1b13eac7e9834e007eabf75cd3988-removebg-preview.png" alt="Featured book cover" fill className="object-cover" />
                         </div>
 
                         {/* Interactive carousel arrows — isolated client component */}
@@ -65,7 +59,7 @@ export default function Hero() {
             </div>
 
             {/* Stats bar */}
-            <div className="relative z-10 bg-[#f3e9da]">
+            <div className="relative z-10 bg-[#f3e9da] mt-[430px]">
                 <div className="max-w-7xl mx-auto px-6 lg:px-12 py-8 grid grid-cols-2 md:grid-cols-4 divide-x divide-[#d8cdb8] text-center">
                     {stats.map((stat) => (
                         <div key={stat.label} className="px-4">

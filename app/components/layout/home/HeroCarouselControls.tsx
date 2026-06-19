@@ -2,7 +2,7 @@
 
 export default function HeroCarouselControls() {
     return (
-        <div className="absolute bottom-0 right-0 flex gap-3 z-20">
+        <div className="absolute top-[500px] bottom-0 right-0 flex gap-3 z-20">
             <button
                 aria-label="Previous book"
                 onClick={() => console.log("prev")}
