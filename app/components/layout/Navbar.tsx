@@ -3,12 +3,12 @@ import Link from "next/link";
 export default function Navbar() {
     return (
         <header className="bg-[#e3d2bb] w-full">
-            <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-12 py-5">
-                <Link href="/" className="font-serif text-2xl font-bold text-[#1c1c1c]">
+            <nav className="flex items-center  mx-10 justify-between px-6 lg:px-12 py-5">
+                <Link href="/" className="font-serif text-3xl font-bold text-[#1c1c1c]">
                     Lumen Books
                 </Link>
 
-                <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-[#1c1c1c]">
+                <ul className="hidden md:flex items-center gap-8 text-lg font-medium text-[#1c1c1c]">
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/books">Discover</Link></li>
                     <li><Link href="/about">About us</Link></li>
@@ -16,7 +16,7 @@ export default function Navbar() {
                 </ul>
 
                 <div className="flex items-center gap-4">
-                    <div className="hidden sm:flex items-center bg-[#f3e9da] rounded-full px-4 py-2 gap-2">
+                    <div className="hidden sm:flex items-center bg-[#f3e9da] rounded-full px-4 py-3 gap-2">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1c1c1c" strokeWidth="2">
                             <circle cx="11" cy="11" r="7" />
                             <line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -24,7 +24,7 @@ export default function Navbar() {
                         <input
                             type="text"
                             placeholder="Search..."
-                            className="bg-transparent outline-none text-sm placeholder:text-[#8a7c6a] w-32"
+                            className="bg-transparent outline-none text-sm placeholder:text-[#8a7c6a] w-52"
                         />
                     </div>
 
