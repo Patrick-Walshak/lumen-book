@@ -29,7 +29,7 @@ export default function Newsletter() {
                     <form className="mt-6 flex flex-col sm:flex-row gap-3">
                         <input
                             type="email"
-                            placeholder="youremailhere@example.com"
+                            placeholder="example@example.com"
                             required
                             className="flex-1 bg-[#f3e9da] rounded-md px-4 py-3 text-sm placeholder:text-[#9a8c76] outline-none"
                         />
