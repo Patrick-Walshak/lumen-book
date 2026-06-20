@@ -51,7 +51,7 @@ export default function Footer() {
                 {/* Brand column */}
                 <div>
                     <h3 className="font-serif text-xl font-bold text-[#1c1c1c]">
-                        BookWorm
+                        Lumen Book
                     </h3>
                     <p className="mt-3 text-sm text-[#5c5142] leading-relaxed">
                         Making as many books available for everyone as possible.
