@@ -1,10 +1,10 @@
 "use client"
 
-import FeaturedBooks from "./components/home/FeaturedBooks";
-import Hero from "./components/home/Hero";
-import Newsletter from "./components/home/Newsletter";
-import Footer from "./components/layout/Footer";
-import Navbar from "./components/layout/Navbar";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import FeaturedBooks from "@/components/home/FeaturedBooks";
+import Newsletter from "@/components/home/Newsletter";
+import Hero from "@/components/home/Hero";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <FeaturedBooks />
-      <Newsletter />
+      <Newsletter/>
       <Footer />
     </main>
   );
