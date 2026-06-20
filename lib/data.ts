@@ -97,35 +97,11 @@ const books: Book[] = [
         createdAt: "2023-05-18",
         ratingsCount: 730,
     },
-    // {
-    //     id: "9",
-    //     slug: "deep-work",
-    //     title: "Deep Work",
-    //     author: "Cal Newport",
-    //     price: 12500,
-    //     description: "Rules for focused success in a distracted world.",
-    //     coverImageUrl: "/images/book-9.jpg",
-    //     category: "Self Help",
-    //     createdAt: "2024-01-30",
-    //     ratingsCount: 287,
-    // },
-    // {
-    //     id: "10",
-    //     slug: "educated",
-    //     title: "Educated",
-    //     author: "Tara Westover",
-    //     price: 13000,
-    //     description: "A memoir about a woman who leaves her survivalist family to pursue education.",
-    //     coverImageUrl: "/images/book-10.jpg",
-    //     category: "Non-Fiction",
-    //     createdAt: "2023-10-08",
-    //     ratingsCount: 455,
-    // },
 ];
 
 export async function getFeaturedBooks(): Promise<Book[]> {
     await new Promise((r) => setTimeout(r, 500)); 
-    return books.slice(0, 8);
+    return books.slice(0, 4);
 }
 
 export async function getAllBooks(): Promise<Book[]> {

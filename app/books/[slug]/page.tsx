@@ -11,7 +11,6 @@ interface BookPageProps {
     params: Promise<{ slug: string }>;
 }
 
-// SSG: pre-render all known books at build time
 export async function generateStaticParams() {
     const books = await getAllBooks();
     return books.map((book) => ({ slug: book.slug }));
