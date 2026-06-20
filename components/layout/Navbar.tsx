@@ -34,12 +34,14 @@ export default function Navbar() {
                             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
                         </svg>
                     </button>
-                    <button aria-label="Account">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1c1c1c" strokeWidth="2">
-                            <circle cx="12" cy="8" r="4" />
-                            <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
-                        </svg>
-                    </button>
+
+                    <Link
+                        href="/login"
+                        className="hidden sm:inline-block bg-[#e07856] hover:bg-[#cf6b4a] text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors"
+                    >
+                        Login
+                    </Link>
+
                     <button aria-label="Menu" className="md:hidden">
                         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1c1c1c" strokeWidth="2">
                             <line x1="3" y1="6" x2="21" y2="6" />
