@@ -70,7 +70,7 @@ export default function Footer() {
                         {socials.map((social) => (
                             
                                 <a href="" key={social.platform}
-                                href={social.href}
+                                // href={social.href}
                                 aria-label={social.platform}
                                 className="w-9 h-9 rounded-full bg-white flex items-center justify-center text-[#e07856]">
                                 {social.platform[0].toUpperCase()}
